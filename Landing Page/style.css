@@ -1,0 +1,158 @@
+
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #1F2937;
+}
+
+.website-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-color:  #1F2937;
+    padding: 30px;
+}
+
+.website-info .main-image-box img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.website-info .info-box {
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    margin: 40px 40px;
+}
+
+.website-info .info-box .website-description {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.website-info .info-box .sign-up-button {
+    color: white;
+    padding: 5px 20px;
+    border: 0cm;
+}
+
+.website-opinion {
+    font-weight: 900px;
+    font-size: 48px;
+}
+
+.random-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+}
+
+.info-slots{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 50px 150px;
+    margin: 0px;
+}
+
+.quote-author {
+    margin-left: 300px;
+}
+
+.quote-text{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.sign-up-button {
+    background-color: #3882F6;
+}
+
+.action {
+     display: flex;
+     gap: 30px;
+     justify-content: space-around;
+     background-color: #3882F6;
+     margin: 20px 100px;
+     padding: 30px 70px;
+}
+
+.action .text-area {
+    color: white
+}
+
+.action .text-area .bigger-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.random-info .random-info-description {
+    align-self: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    margin: 25px;
+}
+
+.slot {
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    align-items: center;
+}
+
+.slot img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.slot .random-text {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
+    font-size: 15px;;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 10px 30px;
+
+}
+
+a {
+    text-decoration: none;
+}
