@@ -43,17 +43,18 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 40px;
     background-color:  #1F2937;
     padding:30px 200px;
 }
 
 .website-info img {
-    width: 600px;
+    width: 450px;
     height: 240px;
     margin: 60px;
-    margin-right: auto;
+    margin-right: -10px;
     background-color: rgb(178, 177, 175);
+    border: 3px solid #0e151e;
 }
 
 .website-info .info-box {
@@ -77,13 +78,14 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.website-info .info-box .sign-up-button {
+.website-info .info-box .subscribe-button {
     color: white;
     padding: 7px 25px;
     border-radius: 5px;
     border: none;
     font-size: 13px;
     font-weight: 700;
+       background-color: #3882F6;
 }
 
 .website-opinion {
@@ -150,13 +152,14 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     background-color: #E5E7EB;
     padding: 90px 300px;
 }
 
 .quote-author {
     align-self: flex-end;
-    padding-right: 60px;
+    padding-right: 50px;
     color: rgb(49, 48, 48);
     font-size: 20px;
     font-weight: 800;
@@ -172,7 +175,7 @@ a {
 
 /* FIFTH PART */
 
-.sign-up-button {
+.buy-button {
     background-color: #3882F6;
     margin-top: 10px;
 }
@@ -198,7 +201,7 @@ a {
     font-weight: bold;
 }
 
-.action .sign-up-button {
+.action .buy-button {
     color: rgb(255, 255, 255);
     overflow: visible;
     border-radius: 5px;
