@@ -1,4 +1,7 @@
 const maxChoiceExclusively = 3;
+ let humanScore = 0;
+ let computerScore = 0;
+ let roundsCount = 0;
 
 function getComputerChoice() {
 
@@ -17,10 +20,10 @@ function getComputerChoice() {
     }
 }
 
-function getUserChoice() {
-    let input = prompt("Please, enter your choice (Rock, Scissors or Paper): ");
-    return input.toLowerCase();
-}
+// function getUserChoice() {
+//     let input = prompt("Please, enter your choice (Rock, Scissors or Paper): ");
+//     return input.toLowerCase();
+// }
 
 function playRound(userChoice, opponentChoice) {
 
@@ -33,46 +36,73 @@ function playRound(userChoice, opponentChoice) {
         : (userChoice === "scissors") ? (opponentChoice === "paper" ? 1 : -1) : (opponentChoice === "paper" ? -1 : 1);
 }
 
-function playGame(roundsChoice) {
+function playGame(userInput) {
 
-    let humanScore = 0;
-    let computerScore = 0;
+    const computerChoice = getComputerChoice();
+    const displayA = document.getElementById("display");
 
-    for (let i = 0; i < roundsChoice; i++) {
-
-        const userChoice = getUserChoice();
-        const computerChoice = getComputerChoice();
-
-        const roundResult = playRound(userChoice, computerChoice);
+    const roundResult = playRound(userInput, computerChoice);
 
         switch (roundResult) {
             case 1:
-                alert("Congrats! You won this round. Your opponent chose " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1).toLowerCase() + ".");
+                displayA.textContent = "Congrats! You won this round. Your opponent chose " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1).toLowerCase() + ".";
                 humanScore++;
                 break;
             case -1:
-                alert("Sorry. You lost this round. Your opponent chose " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1).toLowerCase() + ".");
+                displayA.textContent = ("Sorry. You lost this round. Your opponent chose " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1).toLowerCase() + ".");
                 computerScore++;
                 break;
             case 0:
-                alert("No point for no one. You are equal.");
+                displayA.textContent = ("No point for no one. You are equal.");
                 break;
         }
-    }
 
+    roundsCount++;
+    if(roundsCount == 5) {
+        
     if (humanScore == computerScore) {
-        alert("Nobody wins. You are equal.");
+        displayA.textContent = ("Nobody wins. You are equal.");
     }
     else if (humanScore > computerScore) {
-        alert("Congrats! You won!");
+        displayA.textContent = ("Congrats! You won!");
     }
     else {
-        alert("Sorry. The opponent won.");
+        displayA.textContent = ("Sorry. The opponent won.");
     }
+
+    displayA.textContent = "New Game Ahead!";
+     humanScore = 0;
+    computerScore = 0;
+    roundsCount = 0;
+  }
 }
 
 
-
 alert("Welcome to the ROCK, PAPER, SCISSORS game!");
-let roundsChoice = Number(prompt("Please, enter how many rounds you want to play: "));
-playGame(roundsChoice);
+
+const displayArea = document.createElement("div");
+displayArea.id = "display";
+document.body.append(displayArea);
+
+const buttonRock = document.createElement("button");
+buttonRock.textContent = "Rock";
+buttonRock.addEventListener("click", () => {
+  playGame("rock");
+});
+
+const buttonScissors = document.createElement("button");
+buttonScissors.textContent = "Scissors";
+buttonScissors.addEventListener("click", () => {
+  playGame("scissors");
+});
+
+const buttonPaper = document.createElement("button");
+buttonPaper.textContent = "Paper";
+buttonPaper.addEventListener("click", () => {
+  playGame("paper");
+});
+
+
+document.body.append(buttonRock);
+document.body.append(buttonScissors);
+document.body.append(buttonPaper);
