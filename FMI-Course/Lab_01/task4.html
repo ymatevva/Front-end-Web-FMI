@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Form</title>
+    <link rel="stylesheet" href="form-styles.css">
 </head>
-<body>
+<body><form>
+    <h1>Форма за регистрация</h1>
+    <h4>Основна информация: </h4>
+    <div>
+        <label>Име: *</label>
+        <input type="text" required>
+        <label>Фамилия: *</label>
+        <input type="text" required>
+    </div>
+    <div>
+        <label>Имейл: *</label>
+        <input type="email" required>
+    </div>
+    <div>
+        <label>Парола: *</label>
+        <input type="password">
+        <label>Потвърди парола: *</label>
+        <input type="password" required>
+    </div>
+
+    <h4>Допълнителна информация: </h4>
+    <div class="radio-group>">
+    <legend>Имате ли предишен опит с програмиране:</legend>
+
+    <input type="radio" name="Yes" id="Yes" value="Yes">
+    <label for="Yes">Yes</label>
+
+    <input type="radio" name="No" id="No" value="No">
+    <label for="No">No</label>
+
+    <input type="checkbox" id="rule" name="rule" value="rule">
+    <label for="rule">Съгласен съм с правилата на СУ</label>
+    </div>
+
+    <label>Факултет:</label>
+    <select>
+        <option value="">Изберете факултет</option>
+        <option value="FMI">ФМИ</option>
+        <option value="BF">БФ</option>
+        <option value="UF">ЮФ</option>
+        <option value="MF">МФ</option>
+        <option value="FF">ФФ</option>
+    </select>
+    <label>Допълнителни коментари:</label>
+    <textarea cols="40" rows="5">
+
+    </textarea>
+    
+    <label>Качи файл (.pdf):</label>
+    <input type="file" accept=".pdf">
+
+
+
+    <div class="button-container">
+    <button class="reset">Изчисти</button>
+    <button class="submit">Регистрирай се</button>
+     </div>
+
+  </form>
+       
     
 </body>
 </html>
