@@ -147,28 +147,26 @@ footer {
     margin: 1rem 0.5rem 0.5rem 0.5rem;
     width: 37rem;
 }
-
 .item-describtion {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: calc(var(--gap) - 0.8rem);
     padding: 0.5rem;
-    margin: 0rem 0rem;
+    margin: 0;
     height: 5rem;
     width: 27rem;
-    font:var(--muted);  
+    /* color: var(--muted);   */
     font-size: 14px;
-}
-
-img{
-    height: 5rem;
-    width: 5rem;
 }
 
 .item-describtion h4,
 .item-describtion p {
-  margin: 0; 
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+img{
+    height: 5rem;
+    width: 5rem;
 }
