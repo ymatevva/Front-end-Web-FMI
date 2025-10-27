@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="cart">
+        <header>
+            <h1>Your Cart</h1>
+            <h4>3 items in your cart</h4>
+        </header>
+     
+     
+        <ul class="cart-items">
+        <li class="cart-item">
+            <div class="item-container">
+                <img class="item-image" src="" alt="Item A">
+                <div class="item-describtion">
+                    <header class="cart-item-header">Classic Cotton Tee</header>
+                    <p>
+                        Soft, breathable cotton - perfect for everyday wear.<br>
+                        Size: M . Color: Navy
+                    </p>
+                </div>
+                <text class="item-price">
+                    $29.99
+                </text>
+                <button class="delete-item-button">
+                    X
+                </button>
+            </div>
+        </li>
+        <li class="cart-item">
+            <div class="item-container">
+                <img class="item-image" src="" alt="Item B">
+                <div class="item-describtion">
+                    <header class="cart-item-header">Wireless Headphones</header>
+                    <p>
+                        Up to 24h battery life and active noise cancellation.<br>
+                        Size: M . Color: Navy
+                    </p>
+                </div>
+                <text class="item-price">
+                    $49.50
+                </text>
+                <button class="delete-item-button">
+                    X
+                </button>
+            </div>
+        </li>
+        <li class="cart-item">
+            <div class="item-container">
+                <img class="item-image" src="" alt="Item C">
+                <div class="item-describtion">
+                    <header class="cart-item-header">Stainless Water Bottle</header>
+                    <p>
+                        Keeps drinks cold for up to 12hours.
+                    </p>
+                </div>
+                <text class="item-price">
+                    $15.00
+                </text>
+                <button class="delete-item-button">
+                    X
+                </button>
+            </div>
+        </li>
+        </ul>
+    </section>
+
+    <section class="order-summary">
+        <header>Order Summary</header>
+        <section class="tax-section">
+            <div class="tax-details">
+                <text class="tax-type">Subtotal</text>
+                <text class="tax-sum">$109.49</text>
+            </div>
+            <div class="tax-details">
+                <text class="tax-type">Shipping</text>
+                <text class="tax-sum">$4.99</text>
+            </div>
+            <div class="tax-details">
+                <text class="tax-type">Discount</text>
+                <text class="tax-sum">-$0.00</text>
+            </div>
+            <div class="tax-details" id="total-sum">
+                <text>Total</text>
+                <text>$114.48</text>
+            </div>
+            <button class="checkout-button">
+                Proceed to Checkout
+            </button>
+            <footer class="policy">
+                <text>Secure payment . Free returns within 30 days.</text>
+            </footer>
+        </section>
+    </section>
+</body>
+
+</html>
