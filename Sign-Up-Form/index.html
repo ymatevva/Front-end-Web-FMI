@@ -5,69 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up-Form</title>
-    <style rel="stylesheet" href="style.css"></style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="left">
-        <img src="charan-s-Fu8lex2wLzs-unsplash.jpg" alt="sunset">
-        <section class="logo-section">
+    <main class="main">
+        <section class="left">
+            <img src="charan-s-Fu8lex2wLzs-unsplash.jpg" alt="sunset">
             <img class="logo" src="" alt="OdinLogo">
+            <span class="photo-credits">
+                Photo by Halie West on Unsplash
+            </span>
         </section>
-        <footer class="photo-credits">
-            Photo by someone
-        </footer>
-    </section>
 
-    <section class="right">
-        <section class="page-description">
-            <p class="desc-paragraph">
-                This is not a real online service! You know you need something
-                like this in your real life to help you realize deepest dreams.
-                Sign up now to get started.
-            </p>
-            <text class="desc-text">You know you want to.</text>
-        </section>
-        <section class="sign-section">
-            <header>Let's do this!</header>
-            <section class="names">
-                <section class="first-name">
-                    <input type="text" name="first-name">
-                    <label for="name">FIRST NAME</label>
-                </section>
-                <section class="last-name">
-                    <input type="text" name="last-name">
-                    <label for="name">LAST NAME</label>
-                </section>
+        <section class="right">
+            <section class="page-description">
+                <p class="desc-paragraph">
+                    This is not a real online service! You know you need something
+                    like this in your real life to help you realize deepest dreams.
+                    Sign up now to get started.
+                </p>
+                <span class="desc-small-text">You know you want to.</span>
             </section>
-            <section class="email-phone">
-                <section class="email">
-                    <input type="email" name="email">
-                    <label for="email">EMAIL</label>
-                </section>
-                <section class="phone">
-                    <input type="tel" name="phone">
-                    <label for="phone">PHONE NUMBER</label>
-                </section>
-                <section class="password">
-                    <section class="first-pass">
-                        <input type="password" name="first-pass">
-                        <label for="first-pass">PASSWORD</label>
+            <form class="sign-section">
+                <h1>Let's do this!</h1>
+                <section class="names">
+                    <section class="first-name">
+                        <input type="text" name="first-name" id="first-name">
+                        <label for="first-name">FIRST NAME</label>
                     </section>
-                    <section class="confirm-pass">
-                        <input type="password" name="confirm-pass">
-                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                    <section class="last-name">
+                        <input type="text" name="last-name" id="last-name">
+                        <label for="last-name">LAST NAME</label>
                     </section>
                 </section>
-            </section>
-        </section>
-        <!-- <section class="create-account">
+                <section class="email-phone">
+                    <section class="email">
+                        <input type="email" name="email" id="email">
+                        <label for="email">EMAIL</label>
+                    </section>
+                    <section class="phone">
+                        <input type="tel" name="phone-num" id="phone-num">
+                        <label for="phone-num">PHONE NUMBER</label>
+                    </section>
+                    <section class="password">
+                        <section class="first-pass">
+                            <input type="password" name="first-pass" id="first-pass">
+                            <label for="first-pass">PASSWORD</label>
+                        </section>
+                        <section class="confirm-pass">
+                            <input type="password" name="confirm-pass" id="confirm-pass">
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        </section>
+                    </section>
+                </section>
+            </form>
+            <!-- <section class="create-account">
 
         </section> -->
-        <button class="create-acc-button">Create Account</button>
-        <text>Already have an account?</text>
-        <a href="google.com" target="_blank" ref="norefferer">Log in</a>
-    </section>
+            <button type="submit" class="create-acc-button">Create Account</button>
+            <text>Already have an account?</text>
+            <a href="http://google.com" target="_blank" rel="norefferer">Log in</a>
+        </section>
+    </main>
 </body>
 
 </html>

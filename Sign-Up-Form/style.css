@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+         url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
 :root{
     --bg: rgb(231, 227, 227);
     --sign-up-color: white;
@@ -6,13 +14,15 @@
     --wrong-pas: #702525;
     --label-font-size: 10px;
     --correct-input-col: rgb(23, 104, 175);
-    --green-col: rgb(19, 90, 19);
+    --create-button-color-bg: #596D48;
+    --light-border: #E5E7EB;
 }
 
 body {
     display: flex;
     height: 100vh;
     margin: 0; /* remove default browser margin */
+    font-family: 'Norse-Bold', sans-serif;
 }
 
 .left{
